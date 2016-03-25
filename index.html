@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML | Basics</title>
+    </head>
+    <body
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h2>HTML BASICS</h2>
+                </section>
+                <section>
+                    <h2 class="abbr">Hyper Text Markup Language</h2>
+                </section>
+
+                <section>
+                    <h2>Tags</h2>
+                    <ul>
+                        <li>Example:
+                            <code class="hljs xml">
+                                &lt;tag&gt;
+                            </code></li>
+                        <li>Opening and closing tags:
+                            <code class="hljs xml">
+                                &lt;tag&gt;Some ext&lt;/tag&gt;
+                            </code></li>
+                        <li>Single tag:
+                            <code class="hljs xml">
+                                &lt;tag/&gt;
+                            </code></li>
+                        <li>Parent and child tags:
+                            <code class="hljs xml">
+                                &lt;first-tag&gt;<br />
+                                &nbsp;&nbsp;&lt;second-tag>Some text&lt;/second-tag&gt;<br />
+                                &lt;/first-tag&gt;
+                            </code></li>
+                        <li>Comment:
+                            <code class="hljs xml">
+                                &lt;!-- Comment content --&gt;
+                            </code></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Attributes</h2>
+
+                    <code class="hljs xml">
+                        &lt;tag attribute1="value" attribute2="value"&gt; ... &lt;/tag&gt;
+                    </code>
+
+                    <ul>
+                        <li>Extend the capabilities of individual tags.</li>
+                        <li>The order of the attributes doesn’t matter.</li>
+                        <li>Examples: `id`, `class`, `name`, `title`, `style`, `src`, `type`</li>
+                    </ul>
+                </section>
+
+                <section>
+                <h2>Global Attributes</h2>
+                    <table class="w3-table-all notranslate">
+                        <tr>
+                            <th style="width:25%">Attribute</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>id</td>
+                            <td>Specifies unique identifier for an element (refers to a class in a style sheet)</td>
+                        </tr>
+                        <tr>
+                            <td>class</td>
+                            <td>Specifies one or more classnames for an element (refers to a class in a style sheet)</td>
+                        </tr>
+                        <tr>
+                            <td>data-*</td>
+                            <td>Used to store custom data private to the page or application</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Main parts of Document</h2>
+                    <h3 class="abbr third">DOCTYPE</h3>
+                    This is a container that includes the entire page content.<br />
+                    There is always two sections on the page : head and body.
+                    <h3 class="abbr third">HEAD</h3>
+                    contains information about the HTML file: the name of the page, style, meta tags and additional information
+                    <h3 class="abbr third">BODY</h3>
+                    contains all the text and tags that are displayed on the page
+                </section>
+
+                <section>
+                    <h2>&lt;!DOCTYPE&gt;</h2>
+
+                    <p style="text-align: left">Element `&lt;!DOCTYPE&gt;` is intended to indicate the type of the document - DTD (document type definition), for the browser to know how to parse the page.</p>
+                    <p style="text-align: left">There was several versions HTML i XHTML (EXtensible HyperText Markup Language), as well as HTML5, which differ in syntax.</p>
+                    <p style="text-align: left">But nowadays &lt;!DOCTYPE html&gt; the only doctype you should use</p>
+                </section>
+
+                <section>
+                    <h2>Browsers</h2>
+                    <ul>
+                        <li>Chrome</li>
+                        <li>Firefox</li>
+                        <li>Safari</li>
+                        <li>Internet Explorer</li>
+                        <li>Other</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Quirks mode</h2>
+                    <a href="https://developer.mozilla.org/en-US/docs/Quirks_Mode_and_Standards_Mode">Quirks mode</a>
+                </section>
+                <section>
+                    <section>
+                       <h2>HEAD ELEMENTS</h2>
+                       <ul class="half">
+                           <li>&lt;title&gt; (this element is required in an
+                           HTML document)</li>
+                           <li>&lt;style&gt;</li>
+                           <li>&lt;base&gt;</li>
+                           <li>&lt;link&gt;</li>
+                           <li>&lt;meta&gt;</li>
+                           <li>&lt;script&gt;</li>
+                       </ul>
+                   </section>
+                   <section>
+                       <ul>
+                           <li>&lt;meta charset="UTF-8"&gt;</li>
+                           <li>&lt;meta name="description" content=""&gt;</li>
+                           <li>&lt;meta name="keywords" content=""&gt;</li>
+                           <li>&lt;meta name="author" content=""&gt;</li>
+                       </ul>
+                   </section>
+               </section>
+               <section>
+                   <h2>Rules of Html coding (XHTML)</h2>
+                   <ul>
+                        <li>All tags and their attributes must be typed in lower case;</li>
+                        <li>The value of any attribute must be enclosed in quotation marks;</li>
+                        <li>You must close all tags, even those that do not have a closing tag;</li>
+                        <li>Must follow the rules of correct tags nesting;</li>
+                        <li>You can not use a shortened tag attributes (without the quotes);</li>
+                        <li>Instead attribute name in certain situations should be used id;</li>
+                        <li>Always specify &lt;!DOCTYPE html&gt;</li>
+                   </ul>
+               </section>
+               <section>
+                   <h2>Validation</h2>
+                   <p style="text-align: left">Validator checks the markup validity of Web documents in HTML and XHTML</p>
+                   <a href="http://validator.w3.org/">Validator</a>
+               </section>
+               <section>
+                    <h2>Block and inline element</h2>
+                    <p style="text-align: left">Block elements occupy all available width of container, height of these component is determined by its content, and it always starts on a new line.</p>
+                    <p style="text-align: left">Inline elements are directly part of another element, such as a text paragraph. They are mainly used to change the appearance of text or a logical selection.</p>
+                    <p style="text-align: left">You can not insert an block elements into inline elements according to specification (eg &lt;h1&gt; in &lt;a&gt;).</p>
+                </section>
+                <section>
+                <h2>Headings</h2>
+                    <ul class="half" style="list-style: none;">
+                        <li>&lt;h1&gt;My Title&lt;/h1&gt;</li>
+                        <li>&lt;h2&gt;My Title&lt;/h2&gt;</li>
+                        <li>&lt;h3&gt;My Title&lt;/h3&gt;</li>
+                        <li>&lt;h4&gt;My Title&lt;/h4&gt;</li>
+                        <li>&lt;h5&gt;My Title&lt;/h5&gt;</li>
+                        <li>&lt;h6&gt;My Title&lt;/h6&gt;</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Paragraph</h2>
+                    &lt;p&gt;My Paragraph&lt;/p&gt;
+                </section>
+                <section>
+                    <h2>Some other block elements</h2>
+                    <ul style="list-style: none;">
+                        <li>&lt;pre&gt;Preformatted text&lt;/pre&gt;</li>
+                        <li>&lt;address&gt;NOT post address&lt;/address&gt;</li>
+                        <li>&lt;bloquote&gt;Quoted text&lt;/bloquote&gt;</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Links</h2>
+                        <ul style="list-style: none;">
+                            <li>&lt;a href="http://site.com" target="_blank"&gt;<br />Awesome site<br />&lt;/a&gt;</li>
+                        </ul>
+                </section>
+                <section>
+                    <h2>Inline elements</h2>
+                    <ul style="list-style: none;">
+                        <li>&lt;sub&gt;just text&lt;/sub&gt;</li>
+                        <li>&lt;sup&gt;just text&lt;/sup&gt;</li>
+                        <li>&lt;del&gt;just text&lt;/del&gt;</li>
+                        <li>&lt;code&gt;just text&lt;/code&gt;</li>
+                        <li>&lt;q&gt;just text&lt;/q&gt;</li>
+                        <li>&lt;cite&gt;just text&lt;/cite&gt;</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Inline elements</h2>
+                    <ul style="list-style: none;">
+                        <li>&lt;b&gt;just text&lt;/b&gt;</li>
+                        <li>&lt;strong&gt;just text&lt;/strong&gt;</li>
+                        <li>&lt;i&gt;just text&lt;/i&gt;</li>
+                        <li>&lt;em&gt;just text&lt;/em&gt;</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Inline elements</h2>
+                    <ul style="list-style: none;">
+                        <li>&lt;br /&gt;</li>
+                        <li>&lt;hr /&gt;</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Lists</h2>
+                    <h3>Ordered list:</h3>
+                    <div class="half">
+                        <div style="text-align: left">
+                            <div>&lt;ol&gt;</div>
+                            <div>&nbsp;&nbsp;&lt;li&gt;Firts item&lt;/li&gt;</div>
+                            <div>&nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;</div>
+                            <div>&lt;/ol&gt;</div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Lists</h2>
+                    <h3>Unordered list:</h3>
+                    <div class="half">
+                        <div style="text-align: left">
+                            <div>&lt;ul&gt;</div>
+                            <div>&nbsp;&nbsp;&lt;li&gt;Firts item&lt;/li&gt;</div>
+                            <div>&nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;</div>
+                            <div>&lt;/ul&gt;</div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Images</h2>
+                    <div class="half">
+                        <div style="text-align: left">
+                            <div>&lt;img src="img/starwars.jpg" alt="Starwars" /&gt;</div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 id="tables">Tables</h2>
+                        <p><code>&lt;table&gt;</code> It is used
+                        as a container for elements that define the contents of the table.
+                        Every table has a rows and cells are set using tags
+                        <code>&lt;tr&gt;</code> and
+                        <code>&lt;td&gt;</code>. Inside <code>&lt;table&gt;</code> it is permissible to use
+                        the following elements: <code>&lt;caption&gt;</code>, <code >&lt;tbody&gt;</code>, <code>&lt;td&gt;</code>,
+                        <code>&lt;tfoot&gt;</code>, <code>colspan</code> attribute is
+                        used to conbine neighboring columns in the table <code>rowspan</code> - to combine rows.</p>
+                </section>
+                <section>
+                    <div style="text-align: left; font-size: 18px; margin-left: 20px;">
+                        <div>&lt;table class="table-demo"&gt;</div>
+                            <div>&nbsp;&lt;thead&gt;</div>
+                                <div>&nbsp;&nbsp;&lt;tr&gt;</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&lt;th&gt;Bus number&lt;/th&gt;</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&lt;th&gt;Price&lt;/th&gt;</div>
+                                <div>&nbsp;&nbsp;&lt;/tr&gt;</div>
+                            <div>&nbsp;&lt;/thead&gt;</div>
+                            <div>&nbsp;&lt;tbody&gt;</div>
+                                <div>&nbsp;&nbsp;&lt;tr&gt;</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&lt;td&gt;3А&lt;/td&gt;</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&lt;td rowspan="2"&gt;3 hrn&lt;/td&gt;</div>
+                                <div>&nbsp;&nbsp;&lt;/tr&gt;</div>
+                                <div>&nbsp;&nbsp;&lt;tr&gt;</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&lt;td&gt;25&lt;/td&gt;</div>
+                                <div>&nbsp;&nbsp;&lt;/tr&gt;</div>
+                                <div>&nbsp;&nbsp;&lt;tr&gt;</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&lt;td&gt;133&lt;/td&gt;</div>
+                                    <div>&nbsp;&nbsp;&nbsp;&lt;td&gt;4 hrn&lt;/td&gt;</div>
+                                <div>&nbsp;&nbsp;&lt;/tr&gt;</div>
+                            <div>&nbsp;&lt;/tbody&gt;</div>
+                        <div>&lt;/table&gt;</div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Elements with no semantic meaning</h2>
+                    <p style="text-align: left">These tags are designed to highlight the portion of the document to change the appearance of the content but without creating additional semantic value fragment.</p>
+                    <p style="text-align: left">&lt;div&gt;</code> - block element</p>
+                    <p style="text-align: left">&lt;span&gt;</code> - inline element</p>
+                </section>
+                <section>
+                    <h2>Special Characters and Signs</h2>
+                    <p style="text-align: left">Many mathematical, technical, and currecy symbols, are not presented on a normal keyboard.</p>
+                    <p style="text-align: left">To add these symbols to an HTML page, you can use an HTML entity name.</p>
+                    <p style="text-align: left">If no entity name exists, you can use an entity number; a decimal (or hexadecimal) reference.</p>
+                    <p style="text-align: left">Euro symbol: &amp;euro; &amp;#8364; &amp;#x20AC;</p>
+                    <p style="text-align: left">&amp;copy; &amp;trade; &amp;laquo; &amp;raquo;
+                       &amp;amp; &amp;nbsp; &amp;lt; &amp;gt;
+                       &amp;ndash; &amp;mdash;</p>
+                </section>
+                <section>
+                    <h2>Can I use</h2>
+                    <a href="http://caniuse.com/">Can I use</a>
+                </section>
+                <section>
+                    <h2>Links to study</h2>
+                    <a href="https://developer.mozilla.org/en/docs/Web/HTML">MDN</a> <br />
+                    <a href="http://htmlbook.ru/">Htmlbook</a> <br />
+                    <a href="http://html5doctor.com/">Htmldoctor</a> <br />
+               </section>
+               <section>
+                    <h2>Thank you!</h2>
+                    <div>Questions</div>
+                </section>
+            </div>
+        </div>
+
+        <script src="http://cursor-education.github.io/style/reveal/main.js"></script>
+    </body>
+</html>
