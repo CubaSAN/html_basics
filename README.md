@@ -1,3 +1,3 @@
-# html_basics
+# HTML BASICS
 
-http://cubasan.github.io/html_basics
+http://cursor-education.github.io/html_basics
